@@ -1,8 +1,10 @@
 {% extends 'base.html' %}
-
 {% block content %}
+
+<h1>Add Record:</h1>
+
 <div class="col-md-6 offset-md-3">
-    <h1>Register</h1><br>
+
     <form method="POST" action="">
 
         {% csrf_token %}
@@ -17,14 +19,10 @@
           {% endif %}
 
         {{ form.as_p}}
-        <button type="submit" class="btn btn-primary">Register</button>
+        
         
 
     </form>
-
-
 </div>
-
-
 
 {% endblock %}
